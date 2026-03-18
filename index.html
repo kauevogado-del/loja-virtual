@@ -27,3 +27,90 @@
             <p>Construindo experiências digitais memoráveis com performance e estilo.</p>
             <a href="#servicos" class="btn-primary">Explorar Agora</a>
         </div>
+    </header>
+
+    <section id="servicos" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Nossos Pilares</h2>
+            <div class="cards-grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">🚀</div>
+                    <h3>Escalabilidade</h3>
+                    <p>Sistemas prontos para crescer junto com o seu negócio.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Foco na experiência do usuário e interfaces modernas.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">🔒</div>
+                    <h3>Segurança</h3>
+                    <p>Proteção de dados com os padrões mais rígidos do mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title light" data-aos="fade-right">O que dizem nossos clientes</h2>
+            <div class="testimonials">
+                <div class="testimonial-item" data-aos="slide-right">
+                    <p>"A melhor escolha que fizemos para nossa startup este ano."</p>
+                    <span>- Mariana Silva, CEO da TechIn</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">F.A.Q.</h2>
+            <div class="faq-container">
+                <details data-aos="fade-up">
+                    <summary>Qual o prazo médio de entrega?</summary>
+                    <p>Nossos projetos levam em média de 4 a 8 semanas, dependendo da complexidade.</p>
+                </details>
+                <details data-aos="fade-up">
+                    <summary>Vocês oferecem suporte pós-lançamento?</summary>
+                    <p>Sim, todos os planos incluem 3 meses de suporte técnico gratuito.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section bg-light">
+        <div class="container">
+            <div class="contact-box" data-aos="zoom-in">
+                <h2>Vamos conversar?</h2>
+                <form>
+                    <input type="text" placeholder="Nome Completo" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <textarea placeholder="Sua Mensagem" rows="5"></textarea>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TechFlow. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: false });
+
+        // Efeito de scroll na Navbar
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('active');
+            } else {
+                nav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
