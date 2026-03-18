@@ -1,1 +1,58 @@
 # loja-virtual
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Moderno | Parallax & AOS</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="parallax">
+        <div class="content" data-aos="fade-up">
+            <h1>Bem-vindo ao Futuro</h1>
+            <p>Experiência imersiva com Parallax e AOS</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 data-aos="fade-right">Nossos Serviços</h2>
+        <div class="cards-grid">
+            <div class="card" data-aos="flip-left" data-aos-delay="100">
+                <h3>Inovação</h3>
+                <p>Soluções criativas para problemas complexos.</p>
+            </div>
+            <div class="card" data-aos="flip-left" data-aos-delay="300">
+                <h3>Design</h3>
+                <p>Interfaces intuitivas e foco total no usuário.</p>
+            </div>
+            <div class="card" data-aos="flip-left" data-aos-delay="500">
+                <h3>Velocidade</h3>
+                <p>Performance otimizada para qualquer dispositivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container faq">
+        <h2 data-aos="zoom-in">Dúvidas Frequentes</h2>
+        <div class="faq-item" data-aos="fade-up">
+            <h3>Como funciona o Parallax?</h3>
+            <p>O fundo se move em uma velocidade diferente do conteúdo frontal, criando profundidade.</p>
+        </div>
+        <div class="faq-item" data-aos="fade-up">
+            <h3>O que é AOS?</h3>
+            <p>É uma biblioteca que permite animar elementos enquanto você faz o scroll na página.</p>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Duração da animação em ms
+            once: true      // Animar apenas uma vez
+        });
+    </script>
+</body>
+</html>
